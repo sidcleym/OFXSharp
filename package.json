@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/afonsof/OfxSharp.git"
   },
-  "author": "Afonso França",
+  "author": "Afonso França, Antônio Milesi Bastos, James Hollingworth",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/afonsof/OfxSharp/issues"

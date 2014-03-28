@@ -18,5 +18,5 @@ var ofxDocument = parser.Import(new FileStream(@"c:\ofxdoc.ofx", FileMode.Open))
 Please use the issue tracker and pull requests.
 
 ## License
-Copyright (c) 2014 Afonso FranÃ§a
+Copyright (c) 2014 Afonso França, Antônio Milesi Bastos, James Hollingworth
 Licensed under the MIT license.
