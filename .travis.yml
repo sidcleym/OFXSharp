@@ -10,4 +10,4 @@ install:
 script:
   - mono --runtime=v4.0.30319 nuget.exe restore
   - xbuild OfxSharp.sln
-  - nunit-console Tests/bin/Release/OfxSharp.Tests.dll
+  - nunit-console Tests/bin/Debug/OfxSharp.Tests.dll
