@@ -9,7 +9,7 @@ namespace OfxSharpLib
 {
     public class OfxDocumentParser
     {
-        public OfxDocument Import(FileStream stream, Encoding encoding)
+        public OfxDocument Import(Stream stream, Encoding encoding)
         {
             using (var reader = new StreamReader(stream, encoding))
             {
@@ -17,7 +17,7 @@ namespace OfxSharpLib
             }
         }
 
-        public OfxDocument Import(FileStream stream)
+        public OfxDocument Import(Stream stream)
         {
             return Import(stream, Encoding.Default);
         }
