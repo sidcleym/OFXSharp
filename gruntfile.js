@@ -8,7 +8,7 @@ module.exports = function(grunt) {
   
     nugetpush: {
         dist: {
-            src: 'pub/OfxSharp.<%= pkg.version %>.0.nupkg'
+            src: 'pub/<%= pkg.name %>.<%= pkg.version %>.0.nupkg'
         }
     },
     
@@ -18,6 +18,12 @@ module.exports = function(grunt) {
                 stdout: true
             },
             command: 'md pub & nuget pack Lib/OfxSharp.csproj -Prop Configuration=Release -OutputDirectory pub'
+        },
+        gitcommit: {
+            options: {
+                stdout: true
+            },
+            command: 'git commit -a -m "version <%= pkg.version %>'
         }
     },
     
@@ -53,6 +59,6 @@ module.exports = function(grunt) {
     }
     
   });
-  grunt.registerTask('default', ['assemblyinfo', 'msbuild'/*, 'nunit'*/, 'shell:nugetpack']);
-  grunt.registerTask('push', ['default', 'nugetpush']);
+  grunt.registerTask('default', ['assemblyinfo', 'msbuild', 'nunit', 'shell:nugetpack']);
+  grunt.registerTask('push', ['default', 'nugetpush', 'shell:gitcommit']);
 };

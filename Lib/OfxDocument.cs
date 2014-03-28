@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace OfxSharp
+namespace OfxSharpLib
 {
     public class OfxDocument
     {

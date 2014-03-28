@@ -2,7 +2,7 @@
 using System.IO;
 using System.Xml;
 
-namespace OfxSharp
+namespace OfxSharpLib
 {
     public static class OfxHelperMethods
     {

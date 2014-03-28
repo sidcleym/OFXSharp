@@ -1,6 +1,6 @@
 using System.ComponentModel;
 
-namespace OfxSharp
+namespace OfxSharpLib
 {
     public enum OfxTransactionType
     {

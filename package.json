@@ -1,6 +1,6 @@
 {
-  "name": "OfxSharp",
-  "version": "1.0.4003",
+  "name": "OfxSharpLib",
+  "version": "0.9.0",
   "description": ".NET OFX Parser",
   "scripts": {},
   "repository": {

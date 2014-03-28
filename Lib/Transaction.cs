@@ -2,7 +2,7 @@ using System;
 using System.Globalization;
 using System.Xml;
 
-namespace OfxSharp
+namespace OfxSharpLib
 {
    public class Transaction
    {

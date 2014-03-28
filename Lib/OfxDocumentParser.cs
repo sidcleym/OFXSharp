@@ -5,7 +5,7 @@ using System.Text;
 using System.Xml;
 using Sgml;
 
-namespace OfxSharp
+namespace OfxSharpLib
 {
     public class OfxDocumentParser
     {

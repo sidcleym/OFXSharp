@@ -7,8 +7,8 @@
     <ProjectGuid>{DDD851F6-8CDE-4777-9B44-AADD0CC678F3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OfxSharp</RootNamespace>
-    <AssemblyName>OfxSharp</AssemblyName>
+    <RootNamespace>OfxSharpLib</RootNamespace>
+    <AssemblyName>OfxSharpLib</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
