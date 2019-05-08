@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OfxSharpLib;
+using System;
 using System.IO;
 using System.Xml;
 
@@ -44,7 +45,7 @@ namespace OFXSharp
             }
             catch
             {
-                throw new OFXParseException("Unable to parse date");
+                throw new OfxParseException("Unable to parse date");
             }
         }
 
