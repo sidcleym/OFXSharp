@@ -2,9 +2,9 @@
 using System.IO;
 using System.Xml;
 
-namespace OfxSharpLib
+namespace OFXSharp
 {
-    public static class OfxHelperMethods
+    public static class OFXHelperMethods
     {
         /// <summary>
         /// Converts string representation of AccountInfo to enum AccountInfo
@@ -30,15 +30,21 @@ namespace OfxSharpLib
                     return new DateTime();
                 }
 
-                var dd = Int32.Parse(date.Substring(6, 2));
-                var mm = Int32.Parse(date.Substring(4, 2));
-                var yyyy = Int32.Parse(date.Substring(0, 4));
+                int dd;
+                Int32.TryParse(date.Substring(6, 2),out dd);
+                int mm;
+                Int32.TryParse(date.Substring(4, 2),out mm);
+                int yyyy;
+                Int32.TryParse(date.Substring(0, 4), out yyyy);
+
+                if (yyyy == 0 || mm == 0 || dd == 0)
+                    return new DateTime(1, 1, 1);
 
                 return new DateTime(yyyy, mm, dd);
             }
             catch
             {
-                throw new OfxParseException("Unable to parse date");
+                throw new OFXParseException("Unable to parse date");
             }
         }
 
