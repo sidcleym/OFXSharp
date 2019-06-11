@@ -54,7 +54,10 @@ namespace OfxSharpLib
 
          try
          {
-            Amount = Convert.ToDecimal(node.GetValue("//TRNAMT"), CultureInfo.InvariantCulture);
+                string value = node.GetValue("//TRNAMT");
+                string valueComPonto = !string.IsNullOrWhiteSpace(value) ? value.Replace(",", ".") : "0";
+
+                Amount = Convert.ToDecimal(node.GetValue("//TRNAMT"), CultureInfo.InvariantCulture);
          }
          catch (Exception ex)
          {
